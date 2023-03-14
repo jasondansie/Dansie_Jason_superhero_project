@@ -10,7 +10,7 @@
     "allowPublicKeyRetrieval": true,
     "tables":[
         {
-            "tableName":"computer",
+            "tableName":"superheros",
             "columns":[
                 "id integer not null primary key",
                 "name varchar(20) not null",

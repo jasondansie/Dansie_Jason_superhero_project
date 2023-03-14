@@ -14,7 +14,7 @@ const CODES = {
 
 const MESSAGES = {
     PROGRAM_ERROR: () => ({
-        message: 'Sorry! There us an rrror in our program',
+        message: 'Sorry! There is an error in our program',
         code: CODES.PROGRAM_ERROR,
         type: 'error'
     }),

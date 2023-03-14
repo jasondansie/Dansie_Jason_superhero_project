@@ -1,18 +1,18 @@
 'use strict';
 
 const Database = require('./database');
-const options=require('./databaseOptions.json');
-const sql=require('./sqlStatements.json');
+const options = require('./databaseOptions.json');
+const sql = require('./sqlStatements.json');
 const { toInsertArray, toUpdateArray } = require('./parameterArrays');
 const {CODES,MESSAGES} = require('./statusCodes');
 
-const getAllSql=sql.getAll.join(' ');
-const getSql=sql.get.join(' ');
-const insertSql=sql.insert.join(' ');
-const updateSql=sql.update.join(' ');
-const removeSql=sql.remove.join(' ');
+const getAllSql = sql.getAll.join(' ');
+const getSql = sql.get.join(' ');
+const insertSql = sql.insert.join(' ');
+const updateSql = sql.update.join(' ');
+const removeSql = sql.remove.join(' ');
 
-const PRIMARY_KEY=sql.primaryKey;
+const PRIMARY_KEY = sql.primaryKey;
 
 // console.log(getAllSql);
 // console.log(getSql);
@@ -23,7 +23,7 @@ const PRIMARY_KEY=sql.primaryKey;
 
 module.exports = class Datastorage{
     constructor(){
-        this.db=new Database(options);
+        this.db = new Database(options);
     }
 
     get CODES(){

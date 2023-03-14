@@ -1,8 +1,8 @@
 {
-    "host":"localhost",
+    "host":"db4free.net",
     "port":3306,
-    "user":"oliver",
-    "password":"1234",
-    "database":"computerdb",
+    "user":"gctestman",
+    "password":"C4rPnxT82r",
+    "database":"gctest",
     "allowPublicKeyRetrieval": true
 }

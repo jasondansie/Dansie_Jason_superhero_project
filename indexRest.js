@@ -10,9 +10,9 @@ const {port,host}=require('./config.json');
 const Datastorage = 
     require(path.join(__dirname,'storage','dataStorageLayer.js'));
 
-const storage=new Datastorage();
+const storage = new Datastorage();
 
-const RESOURCE=storage.resource;
+const RESOURCE = storage.resource;
 
 
 app.use(cors());

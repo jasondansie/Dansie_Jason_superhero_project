@@ -17,7 +17,7 @@
         document.getElementById('methods').addEventListener('change', choose);
 
         clearSelections();
-        urifield.value='http://localhost:4000/api/';
+        urifield.value='http://localhost:5000/api/';
     }
 
     function clearSelections(){
