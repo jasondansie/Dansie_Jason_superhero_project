@@ -38,7 +38,6 @@
         };
 
         if(method==='PUT' || method==='POST'){
-            console.log("json ", jsonarea.value);
             options.body = jsonarea.value;
             options.headers={ 'Content-Type': 'application/json' }
         }

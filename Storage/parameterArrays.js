@@ -11,7 +11,7 @@ const toInsertArray = hero => [
 
 const toUpdateArray = hero => [
     hero.name, hero.yearOfBirth, hero.gear,
-    hero.costume, Number(hero.heroid)
+    hero.costume, +hero.heroID
 ];
 
 module.exports={toInsertArray, toUpdateArray}
