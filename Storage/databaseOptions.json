@@ -1,8 +1,8 @@
 {
-    "host":"db4free.net",
+    "host":"localhost",
     "port":3306,
-    "user":"gctestman",
-    "password":"C4rPnxT82r",
-    "database":"gctest",
+    "user":"root",
+    "password":"Passwd123",
+    "database":"superherodb",
     "allowPublicKeyRetrieval": true
 }

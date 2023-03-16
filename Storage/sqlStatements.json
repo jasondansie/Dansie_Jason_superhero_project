@@ -1,18 +1,18 @@
 {
-    "getAll":["select id,name,type,processor,amount from computer"],
+    "getAll":["select heroID, name, yearOfBirth, gear, costume from superheros"],
     "get":[
-        "select id,name,type,processor,amount from computer",
-        "where id=?"
+        "select heroID, name, yearOfBirth, gear, costume from superheros",
+        "where heroID=?"
     ],
     "insert":[
-        "insert into computer (id, name, type, processor, amount)",
+        "insert into superheros (heroID, name, yearOfBirth, gear, costume)",
         "values(?,?,?,?,?)"
     ],
     "update":[
-        "update computer set name=?, type=?, processor=?, amount=?",
-        "where id=?"
+        "update superheros set name=?, yearOfBirth=?, gear=?, costume=?",
+        "where heroID=?"
     ],
-    "remove":["delete from computer where id=?"],
-    "primaryKey":"id",
-    "resource":"computers"
+    "remove":["delete from superheros where heroID=?"],
+    "primaryKey":"heroID",
+    "resource":"superheros"
 }

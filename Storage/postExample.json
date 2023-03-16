@@ -1,7 +1,7 @@
 {
-    "id":"03",
-    "name":"alienWare",
-    "type":"Expert Gaming Laptop",
-    "processor":"Intel i9 10900",
-    "amount":"100"
+    "heroID":4,
+    "name":"Catwomen",
+    "yearOfBirth":"1978",
+    "gear":"claws",
+    "costume":"black cat body suit"
 }

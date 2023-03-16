@@ -1,0 +1,27 @@
+{
+    "host":"localhost",
+    "port":3306,
+    "admin":"root",
+    "user":"ava",
+    "userpassword":"hhYSBUOz",
+    "dropUser":true,
+    "debug":true,
+    "database":"superherodb",
+    "allowPublicKeyRetrieval": true,
+    "tables":[
+        {
+            "tableName":"superheros",
+            "columns":[
+                "heroID integer not null primary key",
+                "name varchar(20) not null",
+                "yearOfBirth varchar(30) not null",
+                "gear varchar(15) not null",
+                "costume varchar(50) not null"
+            ],
+            "data":[
+                [1,"Batman","1979","utility belt","body armor and cape"],
+                [2, "Superman", "1975","none", "blue and red outfit and cape"]
+            ]
+        }
+    ]
+}

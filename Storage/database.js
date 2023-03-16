@@ -1,11 +1,11 @@
 'use strict';
 
-const mariadb=require('mariadb');
+const mariadb = require('mariadb');
 
 module.exports=class Database{
 
     constructor(options){
-        this.options=options;
+        this.options = options;
     }
 
     doQuery(sql,parameters){

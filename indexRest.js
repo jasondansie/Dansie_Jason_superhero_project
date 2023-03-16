@@ -31,10 +31,12 @@ app.get(`/api/${RESOURCE}`, (req, res) =>
 );
 
 app.post(`/api/${RESOURCE}`,(req,res)=>
+{
+    console.log("response ", req.body)
     storage.insert(req.body)
         .then(result => res.json(result))
         .catch(err => res.json(err))
-);
+});
 
 app.put(`/api/${RESOURCE}/:key`,(req,res)=>{
     const resourceObject=req.body;
@@ -50,10 +52,10 @@ app.delete(`/api/${RESOURCE}/:key`,(req,res)=>
         .catch(err => res.json(err))
 );
 
-app.all('*', (req,res)=>res.json('not supported'));
+app.all('*', (req,res)=>res.json('Incorrect endpoint'));
 
 app.listen(port,host, 
-    ()=>console.log(`Rest server ${host}:${port} serving`))
+    ()=>console.log(`Rest server serving on ${host}:${port} `))
 
 
 
